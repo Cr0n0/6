@@ -139,7 +139,8 @@
     color: #000 !important;
   }
   .dropdown-menu li a:hover {
-    background-color: red !important;
+    background-color: #333;
+    background-color:  !important;
   }
   footer {
     background-color: #2d2d30;
@@ -175,11 +176,18 @@
     </div>
     <div class="collapse navbar-collapse" id="myNavbar">
       <ul class="nav navbar-nav navbar-right">
-        <li><a href="#quisommesnous">ACCUEIL</a></li>
-        <li><a href="#projet">LE PROJET</a></li>
+        <li><a href="#myPage">ACCUEIL</a></li>
+        <li><a href="#projet">QUI SOMMES-NOUS</a></li>
         <li><a href="#ateliers">NOS ATELIERS</a></li>
-        <li><a href="#devenirbenevole">DEVENIR BENEVOLE</a></li>
         <li><a href="#contact">CONTACT</a></li>
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">PLUS
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="#">Pas la peine de cliquer ici, ça fonctionne pas</a>
+        </li>
+        
+        
 
         
           </ul>
@@ -249,13 +257,8 @@
 
 
 <!-- call to action -->
-<div style="text-align: center;">
-<br>
-<br>
-<br>
-<button class="btn" data-toggle="modal" data-target="#venir">VENIR AU「6」!</button>
-</div>
-<div id="band" class="container text-center">
+
+<div id="projet" class="container text-center">
   
   <div><h3>KESAKO LE「6」?</h3></div>
 
@@ -308,10 +311,10 @@
       <!---------JOCELYN----------->
       <div class="col-sm-4">
         <p class="text-center"><strong>Jocelyn</strong></p><br>
-        <a href="#demo3" data-toggle="collapse">
+        <a href="#demo4" data-toggle="collapse">
           <img src="pp/Jocelyn-modified.png" class="img-circle person" alt="Random Name" width="255" height="255">
         </a>
-        <div id="demo3" class="collapse">
+        <div id="demo4" class="collapse">
           <p>Bass player</p>
           <p>Loves math</p>
           <p>Member since 2005</p>
@@ -320,10 +323,10 @@
         <!---------LAURIE-------------->
         <div class="col-sm-4">
           <p class="text-center"><strong>Laurie</strong></p><br>
-          <a href="#demo3" data-toggle="collapse">
+          <a href="#demo5" data-toggle="collapse">
             <img src="pp/laurie.png" class="img-circle person" alt="Random Name" width="255" height="255">
           </a>
-          <div id="demo3" class="collapse">
+          <div id="demo5" class="collapse">
             <p>Bass player</p>
             <p>Loves math</p>
             <p>Member since 2005</p>
@@ -332,10 +335,10 @@
         <!---------MEHDI-------------->
         <div class="col-sm-4">
           <p class="text-center"><strong>Mehdi</strong></p><br>
-          <a href="#demo3" data-toggle="collapse">
+          <a href="#demo6" data-toggle="collapse">
             <img src="pp/mehdi.png" class="img-circle person" alt="Random Name" width="255" height="255">
           </a>
-          <div id="demo3" class="collapse">
+          <div id="demo6" class="collapse">
             <p>Bass player</p>
             <p>Loves math</p>
             <p>Member since 2005</p>
@@ -347,7 +350,8 @@
 </div>
 
 <!-- Container (TOUR Section) -->
-<div id="tour" class="bg-1">
+
+<div id="ateliers" class="bg-1">
   <div class="container">
     <h3 class="text-center">A VENIR</h3>
     <p class="text-center">Vous savez déjà à quel atelier vous souhaitez participer ?<br>Pensez à réserver !<br><br></p>
@@ -366,7 +370,7 @@
           <img src="img/blobbb.png" alt="blob" width="400" height="300">
           <p><strong>Le blob</strong></p>
           <p>Lundi 10 Avril 2023</p>
-          <span class="badge">Nb de places restantes : 1</span>
+          <span class="badge">Places restantes : 2</span>
           <br>
           <br>
           <button class="btn" data-toggle="modal"
@@ -381,7 +385,7 @@
           <img src="img/velo3.jpeg" alt="velo" width="400" height="226">
           <p><strong>Répare ton vélo</strong></p>
           <p>Mardi 11 Avril 2023</p>
-          <span class="badge">Nb de places restantes : 1</span>
+          <span class="badge">Places restantes : 0</span>
           <br>
           <br>
           <button class="btn" data-toggle="modal" data-target="#myModal">COMPLET</button>
@@ -392,7 +396,7 @@
           <img src="img/cuisine2.png" alt="cuisine" width="400" height="300">
           <p><strong>Cuisine</strong></p>
           <p>Jeudi 14 Avril 2023</p>
-          <span class="badge">Nb de places restantes : 1</span>
+          <span class="badge">Places restantes : 5</span>
           <br>
           <br>
           <button class="btn" data-toggle="modal" data-target="#myModal">Réservez !</button>
@@ -438,7 +442,7 @@
 </div>
 
 <!-- Container (Contact Section) -->
-<div id="Nous contacter" class="container">
+<div id="contact" class="container">
   <h5 class="text-center">NOUS CONTACTER</h5>
   <br>
   <p class="text-center"><em>Une question ? Une remarque ? N'hésitez pas à nous contacter !</em>
